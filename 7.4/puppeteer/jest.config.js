@@ -1,5 +1,7 @@
-module.exports = {
-    verbose: true, //указывает на то, что каждый тест будет показан в отчете о процессе запуска 
-     preset: "jest-puppeteer", //указываем, что будем использовать эту библиотеку
-     testTimeout: 60000
- };
+ module.exports = {
+    verbose: true,
+    preset: 'jest-puppeteer',
+    testMatch: ['**/*.test.js'], 
+    setupFilesAfterEnv: ['./jest.setup.js']
+  };
+  
